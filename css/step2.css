@@ -11,7 +11,7 @@
   --Magnolia: hsl(217, 100%, 97%);
   --Alabaster: hsl(231, 100%, 99%);
   --White: hsl(0, 0%, 100%);
-  --para: 16px;
+  --para: 1rem;
   --family: "Ubuntu", "Sans-Serif";
   --fw-semi: 400;
   --fw-bold: 500;
@@ -80,14 +80,33 @@ section {
   border: 1px solid var(--Marineblue);
   border-radius: 10px;
 }
+.box:hover{
+  border: 1px solid var(--Marineblue);
+}
 .box-content{
   line-height: 6px;
 } 
-.box-content h4{
+.box-content h4, .lbox:nth-child(1){
   color: var(--Marineblue);
 }
 .box-content p{
   color: var(--Coolgray);
+}
+.lbox, .lbox:hover{
+  height: 6vh;
+  border: none;
+  background-color: var(--Magnolia);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.for-check-input{
+  background-color: var(--Marineblue);
+}
+.form-check, .form-check-input, .form-check-label{
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .top h4 {

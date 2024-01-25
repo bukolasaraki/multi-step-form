@@ -1,113 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>step 3 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>step 3</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./css/step3.css">
+  <link rel="stylesheet" href="./css/step3.css">
+
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
-Step 1
-  Your info
+<!DOCTYPE html>
+<html lang="en">
 
-  Step 2
-  Select plan
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  Step 3
-  Add-ons
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  Step 4
-  Summary
+  <title>Multi-step form</title>
 
-  <!-- Sidebar end -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-  <!-- Step 1 start -->
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 
-  Personal info
-  Please provide your name, email address, and phone number.
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-  Name
-  e.g. Stephen King
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/step3.css">
+</head>
 
-  Email Address
-  e.g. stephenking@lorem.com
+<body class="">
 
-  Phone Number
-  e.g. +1 234 567 890
+  <div class="main-container">
+    <main class="">
+      <div class="nav-btn d-md-flex justify-content-evenly align-items-center w-md-100">
+        <div class="one">
+          <h4>1</h4>
+        </div>
+        <div class="nav-content w-75 d-none d-md-block">
+          <span>STEP 1</span>
+          <h5>YOUR INFO</h5>
+        </div>
+      </div>
 
-  Next Step
+      <div class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center">
+        <div class="two ms-3 ms-md-0">
+          <h4>2</h4>
+        </div>
+        <div class="nav-content w-75 d-none d-md-block">
+          <span>STEP 2</span>
+          <h5>SELECT PLAN</h5>
+        </div>
+      </div>
 
-  <!-- Step 1 end -->
+      <div class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center">
+        <div class="three mx-3 mx-md-0">
+          <h4>3</h4>
+        </div>
+        <div class="nav-content w-75 d-none d-md-block">
+          <span>STEP 3</span>
+          <h5>ADD-ONS</h5>
+        </div>
+      </div>
 
-  <!-- Step 2 start -->
+      <div class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center">
+        <div class="four">
+          <h4>4</h4>
+        </div>
+        <div class="nav-content w-75 d-none d-md-block">
+          <span>STEP 4</span>
+          <h5>SUMMARY</h5>
+        </div>
+      </div>
+    </main>
 
-  Select your plan
-  You have the option of monthly or yearly billing.
+    <section class="main-section col-10 offset-1 offset-lg-0 p-3">
+      <div class="top mb-3 ">
+        <h4> Select your plan</h4>
+        <p>You have the option of monthly or yearly billing.</p>
+      </div>
 
-  Arcade
-  $9/mo
+      <!-- form 1 row gap-2 gap-md-3 j -->
+      <div class="row gap-2 gap-md-3 justify-content-md-between">
 
-  Advanced
-  $12/mo
+        <div class="box col-12 col-md-3">
+          <div class="box-icon">
+            <img src="./assets/images/icon-arcade.svg" alt="">
 
-  Pro
-  $15/mo
+          </div>
 
-  Monthly
-  Yearly
+          <div class="box-content ms-4 ms-md-0">
+          <h4>Arcade</h4>
+          <p>$9/mo</p>
+        </div>
+      </div>
 
-  Go Back
-  Next Step
+        <div class=" box col-12 col-md-3">
+          <div class="box-icon">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+          </div>
+          <div class="box-content ms-4 ms-md-0">
+          <h4>Advance</h4>
+          <p>$12/mo</p>
+        </div>
+        </div>
+        <div class=" box col-12 col-md-3">
+          <div class="box-icon">
+            <img src="./assets/images/icon-pro.svg" alt="">
 
-  <!-- Step 2 end -->
+          </div>
+          <div class="box-content ms-4 ms-md-0">
+          <h4>Pro</h4>
+          <p>$15/mo</p>
+        </div>
 
-  <!-- Step 3 start -->
+        </div>
+        <div class=" lbox bg-info col-12">
+          <p>Monthly</p>
+          <div class="form-check form-switch mx-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+          </div>
+          <p>Yearly</p>
 
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
+        </div>
 
-  Online service
-  Access to multiplayer games
-  +$1/mo
+      </div>
 
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
+      <div class="btn-container d-none d-md-flex justify-content-between">
+       <a class="btn btn-lg mb-3" href="./step2.html">Back</a>
+        <a class="btn btn-lg mb-3" href="./step2.html">Next Step</a>
+      </div>
+    </section>
+  </div>
 
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
 
-  Go Back
-  Next Step
+  <div 
+  class="next-btn container py-3 d-md-none d-flex justify-content-between">
+    <a class="btn btn-lg mb-3" href="./step2.html">Go Back</a>
+    <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
+  </div>
+</body>
 
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
-
-  Go Back
-  Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you!
-
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
-  to email us at support@loremgaming.com.
+</html>
